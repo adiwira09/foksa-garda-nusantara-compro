@@ -497,31 +497,31 @@
             <div class="partner-slider-container" data-partner-marquee aria-label="Daftar mitra dan afiliasi">
                 <div class="partner-slider-track" data-partner-track>
                     <div class="partner-logo-item">
-                        <img src="{{ asset('images/mitra/abujapi.png') }}" alt="Abujapi" class="partner-logo">
+                        <img src="{{ asset('images/mitra/abujapi.webp') }}" alt="Abujapi" class="partner-logo">
                     </div>
 
                     <div class="partner-logo-item">
-                        <img src="{{ asset('images/mitra/kkp.png') }}" alt="KKP" class="partner-logo">
+                        <img src="{{ asset('images/mitra/kkp.webp') }}" alt="KKP" class="partner-logo">
                     </div>
 
                     <div class="partner-logo-item">
-                        <img src="{{ asset('images/mitra/siti-abadi-karya.png') }}" alt="Siti Abadi Karya" class="partner-logo">
+                        <img src="{{ asset('images/mitra/siti-abadi-karya.webp') }}" alt="Siti Abadi Karya" class="partner-logo">
                     </div>
 
                     <div class="partner-logo-item">
-                        <img src="{{ asset('images/mitra/galih-jaya-furniture.png') }}" alt="Galih Jaya Furniture" class="partner-logo">
+                        <img src="{{ asset('images/mitra/galih-jaya-furniture.webp') }}" alt="Galih Jaya Furniture" class="partner-logo">
                     </div>
 
                     <div class="partner-logo-item">
-                        <img src="{{ asset('images/mitra/kose.png') }}" alt="KOSE" class="partner-logo">
+                        <img src="{{ asset('images/mitra/kose.webp') }}" alt="KOSE" class="partner-logo">
                     </div>
 
                     <div class="partner-logo-item">
-                        <img src="{{ asset('images/mitra/ligantara.jpg') }}" alt="Ligantara" class="partner-logo">
+                        <img src="{{ asset('images/mitra/ligantara.webp') }}" alt="Ligantara" class="partner-logo">
                     </div>
 
                     <div class="partner-logo-item">
-                        <img src="{{ asset('images/mitra/multi-plasindo.jpg') }}" alt="Multi Plasindo" class="partner-logo">
+                        <img src="{{ asset('images/mitra/multi-plasindo.webp') }}" alt="Multi Plasindo" class="partner-logo">
                     </div>
                 </div>
             </div>
@@ -553,7 +553,7 @@
 
                                     <!-- foto profil -->
                                     <div class="relative w-24 h-24">
-                                         <img src="{{ asset('images/pejabat/kasan.png') }}"
+                                         <img src="{{ asset('images/pejabat/kasan.webp') }}"
                                             alt="Kasan Risyanto"
                                             class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
                                     </div>
@@ -592,7 +592,7 @@
 
                                     <!-- foto profil -->
                                     <div class="relative w-24 h-24">
-                                         <img src="{{ asset('images/pejabat/profile.png') }}" 
+                                         <img src="{{ asset('images/pejabat/profile.webp') }}" 
                                             alt="Roswati"
                                             class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
                                     </div>
@@ -636,7 +636,7 @@
 
                                         <!-- FOTO PROFILE -->
                                         <div class="relative w-20 h-20">
-                                            <img src="{{ asset('images/pejabat/mansurna.png') }}" 
+                                            <img src="{{ asset('images/pejabat/mansurna.webp') }}" 
                                                 alt="Mansurna"
                                                 class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
                                         </div>
@@ -659,7 +659,7 @@
 
                                         <!-- FOTO PROFILE -->
                                         <div class="relative w-20 h-20">
-                                            <img src="{{ asset('images/pejabat/profile.png') }}" 
+                                            <img src="{{ asset('images/pejabat/profile.webp') }}" 
                                                 alt="Unknown"
                                                 class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
                                         </div>
@@ -683,7 +683,7 @@
 
                                         <!-- FOTO PROFILE -->
                                         <div class="relative w-20 h-20">
-                                            <img src="{{ asset('images/pejabat/syafrijal.png') }}" 
+                                            <img src="{{ asset('images/pejabat/syafrijal.webp') }}" 
                                                 alt="Syafrijal Adnan"
                                                 class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
                                         </div>
