@@ -1,0 +1,336 @@
+/**
+ * Interactive.css - Mobile and Desktop Interactive Styles
+ * Enhanced forms, animations, and responsive behavior
+ */
+
+/* Form Group Floating Label Effect */
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #DA6B4D;
+    box-shadow: 0 0 0 3px rgba(218, 107, 77, 0.1);
+    background-color: #fafafa;
+}
+
+.form-group-focused label,
+.form-group-filled label {
+    transform: translateY(-1.5rem);
+    font-size: 0.75rem;
+    color: #DA6B4D;
+}
+
+/* Input validation states */
+.form-group input[aria-invalid="true"],
+.form-group textarea[aria-invalid="true"] {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+.form-group input[aria-invalid="true"]:focus,
+.form-group textarea[aria-invalid="true"]:focus {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-error {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.form-group.has-error .form-error {
+    display: block;
+}
+
+.form-success {
+    color: #10b981;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.form-group.has-success .form-success {
+    display: block;
+}
+
+/* Button interactions */
+button, [role="button"], .btn-primary, .btn-secondary {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:active, [role="button"]:active {
+    transform: scale(0.98);
+}
+
+/* Ripple effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Scroll reveal animations */
+.fade-in-on-scroll,
+.slide-in-on-scroll {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-on-scroll.revealed {
+    opacity: 1;
+}
+
+.slide-in-on-scroll {
+    transform: translateY(30px);
+}
+
+.slide-in-on-scroll.revealed {
+    transform: translateY(0);
+}
+
+/* Lazy loaded images */
+img[data-lazy] {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+img.lazy-loaded {
+    animation: fadeInImage 0.4s ease-in;
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mobile touch optimizations */
+@media (max-width: 768px) {
+    /* Increase touch target sizes */
+    button, a, input, select, textarea {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Improve select element on mobile */
+    .form-group select {
+        font-size: 16px; /* Prevent zoom on focus */
+        padding: 0.875rem;
+    }
+
+    /* Better spacing on mobile forms */
+    .form-group {
+        margin-bottom: 1.75rem;
+    }
+
+    /* Improve label readability */
+    .form-group label {
+        font-size: 0.9375rem;
+    }
+
+    /* Enhanced touch feedback */
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+        padding: 0.875rem;
+    }
+
+    /* Increase button padding on mobile */
+    button {
+        padding: 0.875rem 1.5rem;
+    }
+
+    /* Make cards easier to tap */
+    .card, [role="card"] {
+        min-height: 56px;
+    }
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 16px; /* Prevent iOS zoom */
+    }
+
+    .form-group-focused label,
+    .form-group-filled label {
+        font-size: 0.8125rem;
+        transform: translateY(-1.75rem);
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .form-group label {
+        color: #d1d5db;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        background-color: #1f2937;
+        color: #f3f4f6;
+        border-color: #374151;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+        background-color: #111827;
+        border-color: #DA6B4D;
+        box-shadow: 0 0 0 3px rgba(218, 107, 77, 0.2);
+    }
+
+    .form-error {
+        color: #fca5a5;
+    }
+
+    .form-success {
+        color: #86efac;
+    }
+}
+
+/* Improved link focus states */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #DA6B4D;
+    outline-offset: 2px;
+}
+
+/* Better select dropdown styling */
+select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+/* Toast notification styles */
+.toast {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 0.3s ease-out;
+    z-index: 9999;
+    max-width: 400px;
+}
+
+.toast.success {
+    border-left: 4px solid #10b981;
+}
+
+.toast.error {
+    border-left: 4px solid #ef4444;
+}
+
+.toast.info {
+    border-left: 4px solid #3b82f6;
+}
+
+.toast.warning {
+    border-left: 4px solid #f59e0b;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Modal backdrop improvements */
+.modal-backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+/* Loading spinner */
+.spinner {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -14,17 +14,17 @@
         <!-- Content -->
         <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
             <!-- Text Container with Subtle Background -->
-            <div class="max-w-2xl bg-black/35 backdrop-blur-md rounded-2xl p-10 border border-[#DA6B4D]/60 shadow-2xl animate-fade-in-up animation-fill-both">
-                <div class="mb-6 flex items-center space-x-3">
-                    <div class="h-1 w-12 bg-[#DA6B4D] animate-scale-in animation-fill-both"></div>
-                    <span class="text-[#FF8860] font-semibold text-sm uppercase tracking-wide drop-shadow-lg animate-fade-in-up delay-100 animation-fill-both">Keamanan Profesional</span>
+            <div class="max-w-3xl bg-black/35 backdrop-blur-md rounded-2xl p-6 md:p-10 border border-[#DA6B4D]/60 shadow-2xl animate-fade-in-up animation-fill-both">
+                <div class="mb-4 md:mb-6 flex items-center space-x-3">
+                    <div class="h-1 w-8 md:w-12 bg-[#DA6B4D] animate-scale-in animation-fill-both"></div>
+                    <span class="text-[#FF8860] font-semibold text-xs md:text-sm uppercase tracking-wide drop-shadow-lg animate-fade-in-up delay-100 animation-fill-both">Keamanan Profesional</span>
                 </div>
                 
-                <h1 class="text-7xl font-bold text-white mb-6 leading-tight drop-shadow-xl animate-fade-in-up delay-200 animation-fill-both">
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight drop-shadow-xl animate-fade-in-up delay-200 animation-fill-both">
                     Lindungi Aset Berharga Anda
                 </h1>
                 
-                <p class="text-xl text-white mb-8 leading-relaxed drop-shadow-lg animate-fade-in-up delay-300 animation-fill-both">
+                <p class="text-base md:text-lg lg:text-xl text-white mb-6 md:mb-8 leading-relaxed drop-shadow-lg animate-fade-in-up delay-300 animation-fill-both">
                     FOKSA Garda Nusantara menyediakan solusi keamanan profesional yang dapat diandalkan untuk melindungi bisnis dan aset Anda dengan standar nasional.
                 </p>
 
@@ -37,12 +37,14 @@
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
-            <div class="mb-14">
-                <div class="flex items-center space-x-3 mb-4">
-                    <div class="h-1 w-12 bg-[#DA6B4D]"></div>
-                    <span class="text-[#DA6B4D] font-semibold text-sm uppercase tracking-wide">Tentang Kami</span>
+            <div class="mb-12 text-center"> 
+                <div class="flex justify-center items-center space-x-4 mb-4">
+                    <div class="h-[2px] w-10 bg-gradient-to-r from-transparent to-[#DA6B4D]"></div>
+                    <span class="text-[#DA6B4D] font-bold text-lg uppercase tracking-[0.4em] drop-shadow-sm">
+                        Tentang Kami
+                    </span>
+                    <div class="h-[2px] w-10 bg-gradient-to-l from-transparent to-[#DA6B4D]"></div>
                 </div>
-                <h2 class="section-title">Mitra Terpercaya Keamanan Anda</h2>
             </div>
 
             <!-- Tentang Kami + Motto -->
@@ -100,11 +102,15 @@
     <!-- Services Section -->
     <section id="services" class="py-24 bg-[#faf7f5]">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
+            <div class="mb-12">
                 <div class="flex items-center space-x-3 mb-4">
                     <div class="h-1 w-12 bg-[#DA6B4D]"></div>
                     <span class="text-[#DA6B4D] font-semibold text-sm uppercase tracking-wide">Layanan Kami</span>
+                    <div class="h-1 w-12 bg-[#DA6B4D]"></div>
                 </div>
+                <p class="text-lg text-gray-600 mb-12 font-medium leading-relaxed">
+                    Menghadirkan layanan pengamanan dengan standar operasional tinggi dan personel ahli.
+                </p>
             </div>
 
             <!-- Main Product Card -->
@@ -224,87 +230,100 @@
     </section>
 
     <!-- Legalitas Section -->
-    <section class="py-24 bg-[#fffaf7]">
+    <section id="legalitas" class="py-24 bg-[#fffaf7]">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
-                <div class="flex items-center space-x-3 mb-4">
+            
+            <div class="mb-16 text-center">
+                <div class="flex justify-center items-center space-x-3 mb-4">
                     <div class="h-1 w-12 bg-[#DA6B4D]"></div>
-                    <span class="text-[#DA6B4D] font-semibold text-sm uppercase tracking-wide">Sertifikasi</span>
+                    <span class="text-[#DA6B4D] font-semibold text-sm uppercase tracking-wide">Legalitas Perusahaan</span>
+                    <div class="h-1 w-12 bg-[#DA6B4D]"></div>
                 </div>
-                <h2 class="section-title">Sertifikasi & Legalitas Perusahaan</h2>
-                <p class="section-subtitle">Kami beroperasi dengan izin resmi dan sertifikasi internasional</p>
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4 font-display">Izin & Sertifikasi Resmi</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Legality Card 1 -->
-                <div class="bg-gray-100 rounded-xl overflow-hidden border border-gray-200 hover:border-[#DA6B4D] transition duration-300">
-                    <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                        <div class="text-center">
-                            <i class="fas fa-certificate text-6xl text-[#C74F43] opacity-30 mb-3"></i>
-                            <p class="text-gray-600 font-semibold text-sm">Sertifikat Operasional</p>
+            <div class="flex flex-wrap justify-center gap-8" id="legalitasGallery">
+                @foreach(range(1, 7) as $index)
+                <div class="group relative w-full sm:w-[calc(50%-2rem)] lg:w-[calc(25%-2rem)] perspective-1000 cursor-pointer legality-item" data-image="{{ asset('images/legalitas/dokumen-' . $index . '.jpg') }}" data-index="{{ $index }}">
+                    <div class="relative overflow-hidden rounded-xl bg-white shadow-lg border border-gray-200 transition-all duration-500 transform group-hover:-translate-y-2 group-hover:shadow-2xl">
+                        
+                        <div class="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')]"></div>
+
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="{{ asset('images/legalitas/dokumen-' . $index . '.jpg') }}" 
+                                alt="Legalitas {{ $index }}" 
+                                class="w-full h-full object-contain p-4 bg-gray-50 group-hover:scale-105 transition-transform duration-700">
                         </div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-gray-900 text-sm">Izin Operasional</h3>
-                        <p class="text-gray-600 text-xs mt-1">Kementerian Dalam Negeri 2023</p>
+
+                        <div class="absolute inset-0 bg-[#DA6B4D]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="bg-white p-3 rounded-full shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#DA6B4D]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="h-1.5 w-0 bg-[#DA6B4D] group-hover:w-full transition-all duration-500"></div>
                     </div>
                 </div>
+                @endforeach
+            </div>
 
-                <!-- Legality Card 2 -->
-                <div class="bg-gray-100 rounded-xl overflow-hidden border border-gray-200 hover:border-[#2D8B6F] transition duration-300">
-                    <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                        <div class="text-center">
-                            <i class="fas fa-shield-alt text-6xl text-[#2E8B57] opacity-30 mb-3"></i>
-                            <p class="text-gray-600 font-semibold text-sm">ISO 9001:2015</p>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-gray-900 text-sm">Manajemen Mutu</h3>
-                        <p class="text-gray-600 text-xs mt-1">Sertifikasi Internasional</p>
-                    </div>
-                </div>
+            <!-- Zoom Modal Lightbox -->
+            <div id="legalitasModal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in" style="animation: fadeIn 0.3s ease-out;">
+                <div class="relative w-full max-w-4xl max-h-[90vh] bg-white rounded-2xl shadow-2xl overflow-hidden animate-zoom-in" style="animation: zoomIn 0.3s ease-out;">
+                    
+                    <!-- Close Button -->
+                    <button id="closeModal" class="absolute top-4 right-4 z-10 bg-white/90 hover:bg-white text-gray-900 p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110" aria-label="Tutup modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
 
-                <!-- Legality Card 3 -->
-                <div class="bg-gray-100 rounded-xl overflow-hidden border border-gray-200 hover:border-[#DA6B4D] transition duration-300">
-                    <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                        <div class="text-center">
-                            <i class="fas fa-file-contract text-6xl text-[#DA6B4D] opacity-30 mb-3"></i>
-                            <p class="text-gray-600 font-semibold text-sm">BUMN Terpercaya</p>
-                        </div>
+                    <!-- Image Container -->
+                    <div class="relative bg-gray-900 flex items-center justify-center min-h-[70vh]">
+                        <img id="modalImage" src="" alt="Legalitas zoom" class="max-h-[70vh] max-w-full object-contain">
                     </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-gray-900 text-sm">Terdaftar BUMN</h3>
-                        <p class="text-gray-600 text-xs mt-1">Verifikasi Resmi 2023</p>
-                    </div>
-                </div>
 
-                <!-- Legality Card 4 -->
-                <div class="bg-gray-100 rounded-xl overflow-hidden border border-gray-200 hover:border-[#2D8B6F] transition duration-300">
-                    <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                        <div class="text-center">
-                            <i class="fas fa-check-double text-6xl text-[#2D8B6F] opacity-30 mb-3"></i>
-                            <p class="text-gray-600 font-semibold text-sm">Asuransi Lengkap</p>
+                    <!-- Navigation -->
+                    <div class="bg-white px-6 py-4 flex items-center justify-between">
+                        <!-- Left Arrow -->
+                        <button id="prevModalBtn" class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-[#DA6B4D] text-[#DA6B4D] hover:bg-[#DA6B4D] hover:text-white transition-all duration-200" aria-label="Foto sebelumnya">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Counter -->
+                        <div class="text-gray-600 font-semibold text-sm">
+                            <span id="modalCurrentIndex">1</span> / <span id="modalTotalIndex">7</span>
                         </div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-gray-900 text-sm">Coverage Asuransi</h3>
-                        <p class="text-gray-600 text-xs mt-1">PT Asuransi Nasional</p>
+
+                        <!-- Right Arrow -->
+                        <button id="nextModalBtn" class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-[#DA6B4D] text-[#DA6B4D] hover:bg-[#DA6B4D] hover:text-white transition-all duration-200" aria-label="Foto berikutnya">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+
     <!-- Perlengkapan & Peralatan Section -->
     <section class="py-24 bg-[#faf7f5]">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
-                <div class="flex items-center space-x-3 mb-4">
+            <div class="mb-16 text-center">
+                <div class="flex justify-center items-center space-x-3 mb-4">
                     <div class="h-1 w-12 bg-[#DA6B4D]"></div>
                     <span class="text-[#DA6B4D] font-semibold text-sm uppercase tracking-wide">Equipment</span>
+                    <div class="h-1 w-12 bg-[#DA6B4D]"></div>
                 </div>
-                <h2 class="section-title">Perlengkapan & Peralatan</h2>
-                <p class="section-subtitle">Dilengkapi dengan equipment modern dan standar keamanan internasional</p>
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Perlengkapan & Peralatan</h2>
+                <p class="text-lg text-gray-600 mb-12 font-medium leading-relaxed">Dilengkapi dengan equipment modern dan standar keamanan internasional</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -485,13 +504,14 @@
     <!-- Section Mitra Kami -->
     <section class="py-24 bg-[#fffaf7]">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
-                <div class="flex items-center space-x-3 mb-4">
+            <div class="mb-16 text-center">
+                <div class="flex justify-center items-center space-x-3 mb-4">
                     <div class="h-1 w-12 bg-[#DA6B4D]"></div>
                     <span class="text-[#DA6B4D] font-semibold text-sm uppercase tracking-wide">Partnership</span>
+                    <div class="h-1 w-12 bg-[#DA6B4D]"></div>
                 </div>
-                <h2 class="section-title">Mitra & Afiliasi Kami</h2>
-                <p class="section-subtitle">Bermitra dengan perusahaan dan institusi terkemuka di Indonesia untuk menciptakan ekosistem keamanan yang terintegrasi</p>
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Mitra & Afiliasi Kami</h2>
+                <p class="text-lg text-gray-600 mb-12 font-medium leading-relaxed">Bermitra dengan perusahaan dan institusi terkemuka di Indonesia untuk menciptakan ekosistem keamanan yang terintegrasi</p>
             </div>
 
             <div class="partner-slider-container" data-partner-marquee aria-label="Daftar mitra dan afiliasi">
@@ -531,172 +551,125 @@
     <!-- Team Section -->
     <section id="team" class="py-24 bg-[#fffaf7]">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
-                <div class="flex items-center space-x-3 mb-4">
+            <div class="mb-16 text-center">
+                <div class="flex justify-center items-center space-x-3 mb-4">
                     <div class="h-1 w-12 bg-[#DA6B4D]"></div>
                     <span class="text-[#DA6B4D] font-semibold text-sm uppercase tracking-wide">Struktur Organisasi</span>
+                    <div class="h-1 w-12 bg-[#DA6B4D]"></div>
                 </div>
-                <h2 class="section-title">Tim Manajemen & Kepemimpinan</h2>
-                <p class="section-subtitle">Tim berpengalaman yang siap memimpin dan memberikan yang terbaik</p>
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Tim Manajemen</h2>
+                <p class="text-lg text-gray-600 mb-12 font-medium leading-relaxed">Tim berpengalaman yang siap memimpin dan memberikan yang terbaik</p>
             </div>
 
             <!-- Organizational Chart Container -->
             <div class="flex justify-center">
-                <div class="w-full max-w-6xl">
-                    <!-- Level 1: Komisaris Utama -->
-                    <div class="flex justify-center mb-24 animate-fade-in-up animation-fill-both">
-                        <div class="relative w-72">
-                            <!-- Card Standard (no flip animation) -->
-                            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl hover:border-[#DA6B4D] transition-all duration-300 hover:-translate-y-2 relative z-10">
-                                <div class="h-44 bg-gradient-to-br from-[#DA6B4D] to-[#C75838] flex items-center justify-center relative overflow-hidden">
-                                    <div class="absolute inset-0 opacity-10 pattern"></div>
-
-                                    <!-- foto profil -->
-                                    <div class="relative w-24 h-24">
-                                         <img src="{{ asset('images/pejabat/kasan.webp') }}"
-                                            alt="Kasan Risyanto"
-                                            class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
+                <div class="w-full max-w-4xl">
+                    
+                    <!-- Organizational Tree Layout -->
+                    <div class="mb-8">
+                        <!-- Level 1: Komisaris Utama -->
+                        <div class="flex justify-center mb-24 animate-fade-in-up animation-fill-both">
+                            <div class="relative w-72">
+                                <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl hover:border-[#DA6B4D] transition-all duration-300 hover:-translate-y-2 relative z-10">
+                                    <div class="h-44 bg-gradient-to-br from-[#DA6B4D] to-[#C75838] flex items-center justify-center relative overflow-hidden">
+                                        <div class="absolute inset-0 opacity-10 pattern"></div>
+                                        <div class="relative w-24 h-24">
+                                            <img src="{{ asset('images/pejabat/kasan.webp') }}" alt="Kasan Risyanto" class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
+                                        </div>
+                                    </div>
+                                    <div class="p-6 text-center">
+                                        <h3 class="text-lg font-bold text-gray-900 mb-2">Kasan Risyanto</h3>
+                                        <span class="inline-block px-4 py-1.5 bg-[#DA6B4D] bg-opacity-10 text-[#DA6B4D] font-bold text-xs rounded-full">Komisaris Utama</span>
                                     </div>
                                 </div>
+                                <div class="absolute left-1/2 top-full w-1 h-24 bg-gray-300 transform -translate-x-1/2 -z-0"></div>
+                            </div>
+                        </div>
+
+                        <!-- Level 2: Direktur Utama -->
+                        <div class="flex justify-center mb-24 animate-fade-in-up animation-fill-both delay-100">
+                            <div class="relative w-72">
+                                <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl hover:border-[#2D8B6F] transition-all duration-300 hover:-translate-y-2 relative z-10">
+                                    <div class="h-44 bg-gradient-to-br from-[#2D8B6F] to-[#235F52] flex items-center justify-center relative overflow-hidden">
+                                        <div class="absolute inset-0 opacity-10 pattern"></div>
+                                        <div class="relative w-24 h-24">
+                                            <img src="{{ asset('images/pejabat/roswati.webp') }}" alt="Roswati" class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
+                                        </div>
+                                    </div>
+                                    <div class="p-6 text-center">
+                                        <h3 class="text-lg font-bold text-gray-900 mb-2">Roswati</h3>
+                                        <span class="inline-block px-4 py-1.5 bg-[#2D8B6F] bg-opacity-10 text-[#2D8B6F] font-bold text-xs rounded-full">Direktur Utama</span>
+                                    </div>
+                                </div>
+                                <div class="absolute left-1/2 top-full w-1 h-28 bg-gray-300 transform -translate-x-1/2 -z-0"></div>
+                            </div>
+                        </div>
+
+                        <!-- Horizontal Connector & Level 3: Three Directors -->
+                        <div class="relative pt-12">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
                                 
-                                <div class="p-6 text-center">
-                                    <h3 class="text-lg font-bold text-gray-900 mb-2">Kasan Risyanto</h3>
-                                    <span class="inline-block px-4 py-1.5 bg-[#DA6B4D] bg-opacity-10 text-[#DA6B4D] font-bold text-xs rounded-full">Komisaris Utama</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Connector line down -->
-                            <div class="absolute left-1/2 top-full w-1 h-24 bg-gray-300 transform -translate-x-1/2 -z-0"></div>
-
-                            <!-- COMMENTED: Flip Card Back Side
-                            <div class="flip-card-back absolute w-full h-full bg-white rounded-2xl fade-gradient-overlay">
-                                <div class="h-full bg-gradient-to-br from-[#DA6B4D] to-[#C75838] p-6 flex flex-col overflow-hidden">
-                                    <div class="scrollable-card-text flex-1 overflow-y-auto pr-3">
-                                        <p class="text-white text-sm leading-relaxed text-justify font-medium">
-                                            Pengalaman masa kerja yang sudah 29 tahun mengabdi di pasukan elite TNI-AD dengan berbagai pengalaman dan penugasan tempur di daerah operasi maupun pengalaman di basis dengan pendidikan mulai dari Tamtama, Bintara sampai dengan Perwira serta berbagai latihan keras ditempuhnya sehingga mendapat kepercayaan selama 8 tahun sebagai Urnikop dan 7 tahun sebagai Ketua Koperasi di satuannya serta menjadi Ketua Umum Forum Komunikasi dan Silaturahmi Angkatan 392-II (FOKSA 392-II)
-                                        </p>
+                                <!-- Director 1: Operasional -->
+                                <div class="relative">
+                                    <div class="absolute -top-12 left-1/2 w-1 h-12 bg-gray-300 transform -translate-x-1/2"></div>
+                                    <div class="hidden md:block absolute -top-12 left-1/2 right-[-1rem] h-1 bg-gray-300"></div>
+                                    
+                                    <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg hover:border-[#DA6B4D] transition-all duration-300 hover:-translate-y-2 group">
+                                        <div class="h-40 flex items-center justify-center bg-gradient-to-br from-[#DA6B4D] to-[#C75838] relative overflow-hidden">
+                                            <div class="absolute inset-0 opacity-10 pattern"></div>
+                                            <div class="relative w-20 h-20">
+                                                <img src="{{ asset('images/pejabat/mansurna.webp') }}" alt="Mansurna" class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
+                                            </div>
+                                        </div>
+                                        <div class="p-4 text-center">
+                                            <h3 class="text-sm font-bold text-gray-900 mb-2">Mansurna</h3>
+                                            <span class="inline-block px-3 py-1 bg-[#DA6B4D] bg-opacity-10 text-[#DA6B4D] font-semibold text-xs rounded-full">Direktur Operasional</span>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <!-- Director 2: Keuangan -->
+                                <div class="relative">
+                                    <div class="absolute -top-12 left-1/2 w-1 h-12 bg-gray-300 transform -translate-x-1/2"></div>
+                                    <div class="hidden md:block absolute -top-12 left-[-1rem] right-[-1rem] h-1 bg-gray-300"></div>
+                                    
+                                    <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg hover:border-[#2D8B6F] transition-all duration-300 hover:-translate-y-2 group">
+                                        <div class="h-40 flex items-center justify-center bg-gradient-to-br from-[#2D8B6F] to-[#235F52] relative overflow-hidden">
+                                            <div class="absolute inset-0 opacity-10 pattern"></div>
+                                            <div class="relative w-20 h-20">
+                                                <img src="{{ asset('images/pejabat/profile.webp') }}" alt="Direktur Keuangan" class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
+                                            </div>
+                                        </div>
+                                        <div class="p-4 text-center">
+                                            <h3 class="text-sm font-bold text-gray-900 mb-2">Direktur Keuangan</h3>
+                                            <span class="inline-block px-3 py-1 bg-[#2D8B6F] bg-opacity-10 text-[#2D8B6F] font-semibold text-xs rounded-full">Direktur Keuangan</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Director 3: SDM -->
+                                <div class="relative">
+                                    <div class="absolute -top-12 left-1/2 w-1 h-12 bg-gray-300 transform -translate-x-1/2"></div>
+                                    <div class="hidden md:block absolute -top-12 left-[-1rem] right-1/2 h-1 bg-gray-300"></div>
+                                    
+                                    <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg hover:border-[#DA6B4D] transition-all duration-300 hover:-translate-y-2 group">
+                                        <div class="h-40 flex items-center justify-center bg-gradient-to-br from-[#DA6B4D] to-[#C75838] relative overflow-hidden">
+                                            <div class="absolute inset-0 opacity-10 pattern"></div>
+                                            <div class="relative w-20 h-20">
+                                                <img src="{{ asset('images/pejabat/syafrijal.webp') }}" alt="Syafrijal Adnan" class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
+                                            </div>
+                                        </div>
+                                        <div class="p-4 text-center">
+                                            <h3 class="text-sm font-bold text-gray-900 mb-2">Syafrijal Adnan</h3>
+                                            <span class="inline-block px-3 py-1 bg-[#DA6B4D] bg-opacity-10 text-[#DA6B4D] font-semibold text-xs rounded-full">Direktur SDM</span>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                            -->
                         </div>
                     </div>
 
-                    <!-- Level 2: Direktur Utama -->
-                    <div class="flex justify-center mb-24 animate-fade-in-up animation-fill-both delay-100">
-                        <div class="relative w-72">
-                            <!-- Card Standard (no flip animation) -->
-                            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-lg hover:shadow-xl hover:border-[#2D8B6F] transition-all duration-300 hover:-translate-y-2 relative z-10">
-                                <div class="h-44 bg-gradient-to-br from-[#2D8B6F] to-[#235F52] flex items-center justify-center relative overflow-hidden">
-                                    <div class="absolute inset-0 opacity-10 pattern"></div>
-
-                                    <!-- foto profil -->
-                                    <div class="relative w-24 h-24">
-                                         <img src="{{ asset('images/pejabat/profile.webp') }}" 
-                                            alt="Roswati"
-                                            class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
-                                    </div>
-                                </div>
-                                
-                                <div class="p-6 text-center">
-                                    <h3 class="text-lg font-bold text-gray-900 mb-2">Roswati</h3>
-                                    <span class="inline-block px-4 py-1.5 bg-[#2D8B6F] bg-opacity-10 text-[#2D8B6F] font-bold text-xs rounded-full">Direktur Utama</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Connector line down -->
-                            <div class="absolute left-1/2 top-full w-1 h-28 bg-gray-300 transform -translate-x-1/2 -z-0"></div>
-
-                            <!-- COMMENTED: Flip Card Back Side
-                            <div class="flip-card-back absolute w-full h-full bg-white rounded-2xl fade-gradient-overlay">
-                                <div class="h-full bg-gradient-to-br from-[#2D8B6F] to-[#235F52] p-6 flex flex-col overflow-hidden">
-                                    <div class="scrollable-card-text flex-1 overflow-y-auto pr-3">
-                                        <p class="text-white text-sm leading-relaxed text-justify font-medium">
-                                            Pengalaman masa kerja lebih dari 25 tahun sebagai Konsultan Koperasi Pendamping UKM Nasional Bidang Keuangan, Pajak, Pelatihan, Manajemen, Audit External Keuangan dan tersertifikasi BNSP, Tenaga pendamping untuk bidang perdagangan, perindustrian, koperasi dan UKM di Pusdiklat PPKUKM DKI Jakarta, tenaga pembina dan Pendamping di Unit Pembiayaan Dana Bergulir (UPDB) Dinas Koperasi dan UKM DKI Jakarta
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            -->
-                        </div>
-                    </div>
-
-                    <!-- Horizontal Connector & Level 3: Three Directors -->
-                    <div class="relative pt-12">
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-                            
-                            <!-- Director 1: Operasional -->
-                            <div class="relative">
-                                <div class="absolute -top-12 left-1/2 w-1 h-12 bg-gray-300 transform -translate-x-1/2"></div>
-                                <div class="hidden md:block absolute -top-12 left-1/2 right-[-1rem] h-1 bg-gray-300"></div>
-                                
-                                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg hover:border-[#DA6B4D] transition-all duration-300 hover:-translate-y-2 group">
-                                    <div class="h-40 flex items-center justify-center bg-gradient-to-br from-[#DA6B4D] to-[#C75838] relative overflow-hidden">
-                                        <div class="absolute inset-0 opacity-10 pattern"></div>
-
-                                        <!-- FOTO PROFILE -->
-                                        <div class="relative w-20 h-20">
-                                            <img src="{{ asset('images/pejabat/mansurna.webp') }}" 
-                                                alt="Mansurna"
-                                                class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
-                                        </div>
-                                    </div>
-                                    <div class="p-4 text-center">
-                                        <h3 class="text-sm font-bold text-gray-900 mb-2">Mansurna</h3>
-                                        <span class="inline-block px-3 py-1 bg-[#DA6B4D] bg-opacity-10 text-[#DA6B4D] font-semibold text-xs rounded-full">Direktur Operasional</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Director 2: Unknown -->
-                            <div class="relative">
-                                <div class="absolute -top-12 left-1/2 w-1 h-12 bg-gray-300 transform -translate-x-1/2"></div>
-                                <div class="hidden md:block absolute -top-12 left-[-1rem] right-[-1rem] h-1 bg-gray-300"></div>
-                                
-                                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg hover:border-[#2D8B6F] transition-all duration-300 hover:-translate-y-2 group">
-                                    <div class="h-40 flex items-center justify-center bg-gradient-to-br from-[#2D8B6F] to-[#235F52] relative overflow-hidden">
-                                        <div class="absolute inset-0 opacity-10 pattern"></div>
-
-                                        <!-- FOTO PROFILE -->
-                                        <div class="relative w-20 h-20">
-                                            <img src="{{ asset('images/pejabat/profile.webp') }}" 
-                                                alt="Unknown"
-                                                class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
-                                        </div>
-                                    </div>
-
-                                    <div class="p-4 text-center">
-                                        <h3 class="text-sm font-bold text-gray-900 mb-2">Unknown</h3>
-                                        <span class="inline-block px-3 py-1 bg-[#2D8B6F] bg-opacity-10 text-[#2D8B6F] font-semibold text-xs rounded-full">Direktur Unknown</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Director 3: Personalia -->
-                            <div class="relative">
-                                <div class="absolute -top-12 left-1/2 w-1 h-12 bg-gray-300 transform -translate-x-1/2"></div>
-                                <div class="hidden md:block absolute -top-12 left-[-1rem] right-1/2 h-1 bg-gray-300"></div>
-                                
-                                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-md hover:shadow-lg hover:border-[#DA6B4D] transition-all duration-300 hover:-translate-y-2 group">
-                                    <div class="h-40 flex items-center justify-center bg-gradient-to-br from-[#DA6B4D] to-[#C75838] relative overflow-hidden">
-                                        <div class="absolute inset-0 opacity-10 pattern"></div>
-
-                                        <!-- FOTO PROFILE -->
-                                        <div class="relative w-20 h-20">
-                                            <img src="{{ asset('images/pejabat/syafrijal.webp') }}" 
-                                                alt="Syafrijal Adnan"
-                                                class="w-full h-full object-cover rounded-full border-4 border-white shadow-lg">
-                                        </div>
-                                    </div>
-                                    <div class="p-4 text-center">
-                                        <h3 class="text-sm font-bold text-gray-900 mb-2">Syafrijal Adnan</h3>
-                                        <span class="inline-block px-3 py-1 bg-[#DA6B4D] bg-opacity-10 text-[#DA6B4D] font-semibold text-xs rounded-full">Direktur SDM</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -707,19 +680,19 @@
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Heading -->
-            <div class="max-w-3xl mb-16">
+            <div class="mb-16">
                 <div class="flex items-center space-x-3 mb-4">
-                    <div class="h-[2px] w-12 bg-[#DA6B4D]"></div>
-                    <span class="text-[#DA6B4D] font-semibold text-sm uppercase tracking-[0.2em]">
+                    <div class="h-1 w-12 bg-[#DA6B4D]"></div>
+                    <span class="text-[#DA6B4D] font-semibold text-sm uppercase tracking-wide">
                         Hubungi Kami
                     </span>
                 </div>
 
-                <h2 class="section-title mb-4">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4 mb-4">
                     Mari Diskusikan Kebutuhan Anda
                 </h2>
 
-                <p class="section-subtitle max-w-2xl">
+                <p class="text-lg text-gray-600 mb-12 font-medium leading-relaxed max-w-2xl">
                     Tim kami siap membantu memberikan solusi keamanan yang sesuai dengan kebutuhan Anda.
                 </p>
             </div>
@@ -1069,6 +1042,36 @@
                 }
             });
 
+            // Swipe gesture support for gallery
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            const mainImageElement = mainImage.parentElement;
+            
+            mainImageElement.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            }, false);
+
+            mainImageElement.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, false);
+
+            function handleSwipe() {
+                const swipeThreshold = 50;
+                const diff = touchStartX - touchEndX;
+                
+                if (Math.abs(diff) > swipeThreshold) {
+                    if (diff > 0) {
+                        // Swiped left - next image
+                        updateMainImage(currentIndex + 1);
+                    } else {
+                        // Swiped right - previous image
+                        updateMainImage(currentIndex - 1);
+                    }
+                }
+            }
+
             // Initialize first thumbnail as active
             if (thumbnailItems.length > 0) {
                 updateMainImage(0);
@@ -1241,6 +1244,255 @@
             }
 
             startCarousel();
+        });
+
+        // Organizational Structure Tab Switching
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.org-tab-btn');
+            const levels = document.querySelectorAll('.org-level');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetLevel = this.getAttribute('data-level');
+
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-[#DA6B4D]', 'bg-[#2D8B6F]', 'text-white');
+                        btn.classList.add('border-2', 'border-gray-300', 'text-gray-700');
+                    });
+
+                    // Add active class to clicked button
+                    this.classList.add('active', 'bg-[#DA6B4D]', 'text-white');
+                    this.classList.remove('border-2', 'border-gray-300', 'text-gray-700');
+
+                    // Handle color for direktur button
+                    if (targetLevel === 'direktur') {
+                        this.classList.remove('bg-[#DA6B4D]');
+                        this.classList.add('bg-[#2D8B6F]', 'border-[#2D8B6F]');
+                    }
+
+                    // Hide all levels
+                    levels.forEach(level => {
+                        level.classList.remove('active');
+                        level.classList.add('hidden');
+                    });
+
+                    // Show target level
+                    const targetElement = document.getElementById(`level-${targetLevel}`);
+                    if (targetElement) {
+                        targetElement.classList.remove('hidden');
+                        targetElement.classList.add('active');
+                        
+                        // Re-trigger animation
+                        const animatedItems = targetElement.querySelectorAll('[class*="animate-"]');
+                        animatedItems.forEach((item, index) => {
+                            item.style.animation = 'none';
+                            setTimeout(() => {
+                                item.style.animation = '';
+                            }, 10);
+                        });
+                    }
+                });
+            });
+        });
+
+        // Legalitas Modal Zoom Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('legalitasModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeBtn = document.getElementById('closeModal');
+            const prevBtn = document.getElementById('prevModalBtn');
+            const nextBtn = document.getElementById('nextModalBtn');
+            const currentIndexSpan = document.getElementById('modalCurrentIndex');
+            const totalIndexSpan = document.getElementById('modalTotalIndex');
+            const legalityItems = document.querySelectorAll('.legality-item');
+            
+            let currentModalIndex = 0;
+            const totalItems = legalityItems.length;
+            totalIndexSpan.textContent = totalItems;
+
+            // Add CSS animations if not already in stylesheet
+            if (!document.getElementById('zoomAnimations')) {
+                const style = document.createElement('style');
+                style.id = 'zoomAnimations';
+                style.textContent = `
+                    @keyframes fadeIn {
+                        from {
+                            opacity: 0;
+                        }
+                        to {
+                            opacity: 1;
+                        }
+                    }
+                    
+                    @keyframes zoomIn {
+                        from {
+                            transform: scale(0.95);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: scale(1);
+                            opacity: 1;
+                        }
+                    }
+                    
+                    @keyframes fadeOut {
+                        from {
+                            opacity: 1;
+                        }
+                        to {
+                            opacity: 0;
+                        }
+                    }
+                    
+                    @keyframes zoomOut {
+                        from {
+                            transform: scale(1);
+                            opacity: 1;
+                        }
+                        to {
+                            transform: scale(0.95);
+                            opacity: 0;
+                        }
+                    }
+                    
+                    .animate-fade-in {
+                        animation: fadeIn 0.3s ease-out;
+                    }
+                    
+                    .animate-zoom-in {
+                        animation: zoomIn 0.3s ease-out;
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+
+            // Function to open modal
+            function openModal(index) {
+                currentModalIndex = index;
+                const item = legalityItems[currentModalIndex];
+                const imageUrl = item.getAttribute('data-image');
+                
+                modalImage.src = imageUrl;
+                currentIndexSpan.textContent = currentModalIndex + 1;
+                
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+
+            // Function to close modal
+            function closeModal() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+
+            // Function to show next image
+            function showNext() {
+                currentModalIndex = (currentModalIndex + 1) % totalItems;
+                const item = legalityItems[currentModalIndex];
+                const imageUrl = item.getAttribute('data-image');
+                
+                // Fade out effect
+                modalImage.style.opacity = '0.5';
+                
+                setTimeout(() => {
+                    modalImage.src = imageUrl;
+                    currentIndexSpan.textContent = currentModalIndex + 1;
+                    modalImage.style.opacity = '1';
+                }, 150);
+            }
+
+            // Function to show previous image
+            function showPrev() {
+                currentModalIndex = (currentModalIndex - 1 + totalItems) % totalItems;
+                const item = legalityItems[currentModalIndex];
+                const imageUrl = item.getAttribute('data-image');
+                
+                // Fade out effect
+                modalImage.style.opacity = '0.5';
+                
+                setTimeout(() => {
+                    modalImage.src = imageUrl;
+                    currentIndexSpan.textContent = currentModalIndex + 1;
+                    modalImage.style.opacity = '1';
+                }, 150);
+            }
+
+            // Event listeners for legality items (click to open modal)
+            legalityItems.forEach((item, index) => {
+                item.addEventListener('click', function() {
+                    openModal(index);
+                });
+                
+                // Also allow keyboard navigation on items
+                item.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        openModal(index);
+                    }
+                });
+            });
+
+            // Event listener for close button
+            closeBtn.addEventListener('click', closeModal);
+
+            // Event listeners for navigation buttons
+            prevBtn.addEventListener('click', showPrev);
+            nextBtn.addEventListener('click', showNext);
+
+            // Close modal when clicking outside the modal content
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (modal.classList.contains('hidden')) {
+                    return;
+                }
+                
+                if (e.key === 'Escape') {
+                    closeModal();
+                } else if (e.key === 'ArrowLeft') {
+                    showPrev();
+                } else if (e.key === 'ArrowRight') {
+                    showNext();
+                }
+            });
+
+            // Swipe gesture support for modal
+            let modalTouchStartX = 0;
+            let modalTouchEndX = 0;
+
+            modal.addEventListener('touchstart', function(e) {
+                modalTouchStartX = e.changedTouches[0].screenX;
+            }, false);
+
+            modal.addEventListener('touchend', function(e) {
+                modalTouchEndX = e.changedTouches[0].screenX;
+                handleModalSwipe();
+            }, false);
+
+            function handleModalSwipe() {
+                const swipeThreshold = 50;
+                const diff = modalTouchStartX - modalTouchEndX;
+                
+                if (Math.abs(diff) > swipeThreshold) {
+                    if (diff > 0) {
+                        // Swiped left - next image
+                        showNext();
+                    } else {
+                        // Swiped right - previous image
+                        showPrev();
+                    }
+                }
+            }
+
+            // Prevent image drag
+            modalImage.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+            });
         });
     </script>
 @endsection

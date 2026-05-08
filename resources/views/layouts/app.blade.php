@@ -8,7 +8,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="{{ asset('css/interactive.css') }}" rel="stylesheet">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         :root {
             --primary: #DA6B4D;
             --secondary: #2D8B6F;
@@ -19,6 +24,10 @@
         
         * {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body.mobile-menu-open {
+            overflow: hidden;
         }
         
         .btn-primary {
@@ -32,14 +41,56 @@
         .btn-outline {
             @apply border-2 border-[#DA6B4D] text-[#DA6B4D] hover:bg-[#DA6B4D] hover:text-white font-medium py-3 px-8 rounded-md transition duration-200 ease-out;
         }
+
+        /* Organization Tabs */
+        .org-tab-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+        }
+
+        .org-tab-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .org-tab-btn.active {
+            box-shadow: 0 4px 12px rgba(218, 107, 77, 0.3);
+        }
+
+        /* Organization Level Content */
+        .org-level {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .org-level.hidden {
+            display: none;
+        }
+
+        .org-level.active {
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        /* Responsive organization tabs */
+        @media (max-width: 768px) {
+            .org-tab-btn {
+                padding: 0.625rem 0.875rem;
+                font-size: 0.875rem;
+            }
+
+            .org-tab-btn i {
+                display: none;
+            }
+        }
         
-        .section-title {
+        /* .section-title {
             @apply text-5xl font-bold text-gray-900 mb-3 tracking-tight;
-        }
+        } */
         
-        .section-subtitle {
+        /* .section-subtitle {
             @apply text-lg text-gray-600 mb-12 font-light;
-        }
+        } */
         
         .card-hover {
             @apply transition duration-300 hover:shadow-lg;
@@ -317,6 +368,16 @@
             color: #DA6B4D;
         }
 
+        /* Animasi halus saat scroll */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .perspective-1000 { perspective: 1000px; }
+        #legalitas .group {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .partner-slider-container {
@@ -347,6 +408,103 @@
                 transition: none !important;
             }
         }
+
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            position: fixed;
+            top: 80px;
+            left: -100%;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: white;
+            transition: left 0.3s ease-in-out;
+            z-index: 40;
+            overflow-y: auto;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-menu.active {
+            left: 0;
+        }
+
+        .mobile-menu-item {
+            display: block;
+            padding: 16px 24px;
+            border-bottom: 1px solid #f3f4f6;
+            color: #374151;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .mobile-menu-item:hover,
+        .mobile-menu-item:active {
+            background-color: #f9fafb;
+            color: #DA6B4D;
+            padding-left: 32px;
+        }
+
+        /* Mobile Menu Toggle Button */
+        .mobile-menu-btn {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-menu-btn.active i {
+            transform: rotate(90deg);
+        }
+
+        /* Touch-friendly interactive elements */
+        @media (max-width: 768px) {
+            button, a, input, select, textarea {
+                min-height: 44px;
+                min-width: 44px;
+            }
+
+            .thumbnail-item {
+                min-height: 60px;
+            }
+
+            .mobile-menu-item {
+                padding: 18px 24px;
+                font-size: 16px;
+            }
+        }
+
+        /* Improved link hover states */
+        a {
+            -webkit-tap-highlight-color: transparent;
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+        }
+
+        a:focus-visible {
+            outline: 2px solid #DA6B4D;
+        }
+
+        /* Better button feedback */
+        button {
+            -webkit-tap-highlight-color: transparent;
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+        }
+
+        button:focus-visible {
+            outline: 2px solid #DA6B4D;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Smooth transitions for all interactive elements */
+        .transition {
+            transition: all 0.2s ease;
+        }
     </style>
     @yield('extra-css')
 </head>
@@ -369,12 +527,21 @@
                     <a href="#team" class="text-gray-700 hover:text-[#DA6B4D] transition font-medium px-4 py-2 rounded-md">Tim</a>
                 </div>
                 
-                <a href="#contact" class="text-gray-700 hover:text-[#DA6B4D] transition font-medium px-4 py-2 rounded-md">Hubungi Kami</a>
+                <a href="#contact" class="text-gray-700 hover:text-[#DA6B4D] transition font-medium px-4 py-2 rounded-md hidden md:inline-block">Hubungi Kami</a>
                 
-                <button class="md:hidden text-gray-700">
+                <button class="md:hidden text-gray-700 mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-menu-item"><i class="fas fa-home mr-3"></i>Beranda</a>
+            <a href="#about" class="mobile-menu-item"><i class="fas fa-info-circle mr-3"></i>Tentang</a>
+            <a href="#services" class="mobile-menu-item"><i class="fas fa-concierge-bell mr-3"></i>Layanan</a>
+            <a href="#team" class="mobile-menu-item"><i class="fas fa-users mr-3"></i>Tim</a>
+            <a href="#contact" class="mobile-menu-item" style="color: #DA6B4D; font-weight: 600;"><i class="fas fa-phone mr-3"></i>Hubungi Kami</a>
         </div>
     </nav>
 
@@ -443,6 +610,81 @@
             </div>
         </div>
     </footer>
+
+    <script src="{{ asset('js/interactive.js') }}"></script>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const body = document.body;
+
+        if (mobileMenuBtn && mobileMenu) {
+            // Toggle menu on button click
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('active');
+                body.classList.toggle('mobile-menu-open');
+                
+                const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+                mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+            });
+
+            // Close menu when clicking on a menu item
+            const menuItems = mobileMenu.querySelectorAll('.mobile-menu-item');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                    body.classList.remove('mobile-menu-open');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Close menu when pressing Escape
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                    body.classList.remove('mobile-menu-open');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        // Smooth scroll enhancement
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || !document.querySelector(href)) return;
+                
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Better touch feedback for interactive elements
+        const touchElements = document.querySelectorAll('button, a, .thumbnail-item, .legality-item, .partner-logo-item');
+        touchElements.forEach(element => {
+            element.addEventListener('touchstart', function() {
+                this.style.opacity = '0.8';
+            }, false);
+            
+            element.addEventListener('touchend', function() {
+                this.style.opacity = '1';
+            }, false);
+        });
+
+        // Add loading state for page
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '1';
+        });
+    </script>
 
     @yield('extra-js')
 </body>
